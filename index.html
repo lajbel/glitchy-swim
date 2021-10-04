@@ -1,16 +1,56 @@
 <!DOCTYPE html>
 <html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    <title>Glitchy Swimmer</title>
+  </head>
 
-<head>
-	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width">
-	<title>Glitchy Swimmer</title>
-	<script src="https://unpkg.com/kaboom@2000.0.0-beta.23/dist/kaboom.js">
-	</script>
-</head>
+  <body>
+    <style>
+      body {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        font-family: "Benton Sans", Helvetica, Sans-serif;
+        text-align: center;
+      }
 
-<body>
-	<script src="game.js"></script>
-</body>
+      .g {
+        margin-bottom: 10px;
+      }
 
+      canvas {
+        border: 5px solid #000;
+        border-radius: 5px;
+      }
+
+      p {
+        font-weight: bold;
+      }
+    </style>
+
+    <a href="https://glitch.com/edit/#!/remix/gswiming"
+      ><img
+        class="g"
+        alt="Remix on Glitch"
+        src="https://cdn.gomix.com/f3620a78-0ad3-4f81-a271-c8a4faa20f86%2Fremix-button.svg"
+    /></a>
+
+    <script type="module" src="game.js"></script>
+
+    <canvas id="game"></canvas>
+
+    <h1>Glitchy Swiming! 🎏</h1>
+
+    <p>
+      Get the Boost 💎<br /><br />
+      Space for swim 🐟 <br />
+      F for Fullscreen 🖥️ (no works in embed) <br /><br />
+      Music by <a href="https://waxterk.newgrounds.com">WaxTerK 🎵</a>
+    </p>
+  </body>
 </html>
